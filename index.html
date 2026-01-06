@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran</title>
+
+  <!-- Hubungkan CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="form-container">
+    <form>
+
+      <!-- Nama -->
+      <div class="form-group">
+        <label class="form-label" for="nama">Nama</label>
+        <input type="text" id="nama" class="form-input" placeholder="Tulis nama kamu" required>
+        <div class="error-text">Nama wajib diisi</div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-input" placeholder="email@contoh.com" required>
+        <div class="error-text">Email tidak valid</div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" placeholder="Password" required>
+        <div class="error-text">Password wajib diisi</div>
+      </div>
+
+      <!-- Jenis Kelamin -->
+      <div class="form-group">
+        <label class="form-label">Jenis Kelamin</label>
+        <input type="radio" name="gender" value="pria"> Pria
+        <input type="radio" name="gender" value="wanita"> Wanita
+      </div>
+
+      <!-- Hobi -->
+      <div class="form-group">
+        <label class="form-label">Hobi</label>
+        <input type="checkbox" value="membaca"> Membaca
+        <input type="checkbox" value="olahraga"> Olahraga
+      </div>
+
+      <!-- Kota -->
+      <div class="form-group">
+        <label class="form-label" for="kota">Kota</label>
+        <select id="kota" class="form-select">
+          <option value="">-- Pilih Kota --</option>
+          <option value="jakarta">Jakarta</option>
+          <option value="bandung">Bandung</option>
+          <option value="surabaya">Surabaya</option>
+          <option value="ciamis">Ciamis</option>
+          <option value="tasikmalaya">Tasikmalaya</option>
+        </select>
+      </div>
+
+      <!-- Input Lain -->
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Umur</label>
+          <input type="number" class="form-input" min="1" max="100">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Tanggal Lahir</label>
+          <input type="date" class="form-input">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Upload File</label>
+        <input type="file" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Pilih Warna</label>
+        <input type="color" class="form-input">
+      </div>
+
+      <!-- Tombol -->
+      <button class="form-button" type="submit">Daftar</button>
+      <button class="form-button" type="reset">Hapus</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
